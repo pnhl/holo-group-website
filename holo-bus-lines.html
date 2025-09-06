@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOLO Bus Lines - Vận tải hành khách cao cấp</title>
+    <meta name="description" content="HOLO Bus Lines cung cấp dịch vụ vận tải hành khách liên tỉnh với xe giường nằm cao cấp, WiFi miễn phí và dịch vụ đặt vé online tiện lợi.">
+    <meta name="keywords" content="HOLO Bus Lines, xe khách, giường nằm, vận tải hành khách, đặt vé online">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Condensed:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="assets/images/logo.png" alt="HOLO Group" class="logo">
+                    <span class="brand-text">HOLO Group</span>
+                </div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Trang chủ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Về chúng tôi</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">Giới thiệu</a></li>
+                            <li><a href="subsidiaries.html">Công ty thành viên</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active">Dịch vụ</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services.html">Tổng quan dịch vụ</a></li>
+                            <li><a href="holo-bus-lines.html">HOLO Bus Lines</a></li>
+                            <li><a href="holo-express.html">HOLO Express</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link">Tin tức</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="careers.html" class="nav-link">Tuyển dụng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Liên hệ</a>
+                    </li>
+                    <li class="nav-item lang-switch">
+                        <a href="#" class="nav-link" onclick="toggleLanguage()">EN</a>
+                    </li>
+                </ul>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bus-hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="brand-badge">
+                        <img src="assets/images/holo-bus-logo.png" alt="HOLO Bus Lines">
+                        <span>HOLO Bus Lines</span>
+                    </div>
+                    <h1>Hành trình an toàn <span class="highlight">Trải nghiệm đẳng cấp</span></h1>
+                    <p class="hero-subtitle">Dịch vụ vận tải hành khách liên tỉnh hàng đầu Việt Nam với xe giường nằm cao cấp, tiện nghi 5 sao và cam kết an toàn tuyệt đối.</p>
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <span class="icon">🛏️</span>
+                            <span>Giường nằm cao cấp</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="icon">📶</span>
+                            <span>WiFi miễn phí</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="icon">🛡️</span>
+                            <span>Bảo hiểm hành khách</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="icon">📱</span>
+                            <span>Đặt vé online</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#booking" class="btn btn-primary">Đặt vé ngay</a>
+                        <a href="#routes" class="btn btn-outline">Xem tuyến đường</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/images/luxury-bus.jpg" alt="HOLO Bus Lines - Xe giường nằm cao cấp">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bus Types -->
+    <section class="bus-types">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Dòng xe cao cấp</h2>
+                <p class="section-subtitle">Lựa chọn phù hợp cho mọi hành trình</p>
+            </div>
+            
+            <div class="bus-types-grid">
+                <div class="bus-type-card featured">
+                    <div class="card-badge">Phổ biến nhất</div>
+                    <div class="bus-image">
+                        <img src="assets/images/bus-vip.jpg" alt="Xe giường nằm VIP">
+                    </div>
+                    <div class="bus-info">
+                        <h3>Giường nằm VIP</h3>
+                        <p class="bus-description">34 ghế giường nằm cao cấp với không gian riêng tư, điều hòa độc lập và tiện nghi đầy đủ.</p>
+                        
+                        <div class="bus-amenities">
+                            <h4>Tiện nghi:</h4>
+                            <ul>
+                                <li>Giường nằm rộng rãi (70cm)</li>
+                                <li>Rèm che riêng tư</li>
+                                <li>Ổ cắm sạc điện thoại</li>
+                                <li>Đèn đọc sách cá nhân</li>
+                                <li>Kệ để đồ</li>
+                                <li>Chăn gối cao cấp</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="price-info">
+                            <span class="price-label">Giá từ:</span>
+                            <span class="price">350.000đ</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bus-type-card">
+                    <div class="bus-image">
+                        <img src="assets/images/bus-limousine.jpg" alt="Xe Limousine">
+                    </div>
+                    <div class="bus-info">
+                        <h3>Limousine</h3>
+                        <p class="bus-description">22 ghế siêu VIP với không gian sang trọng như cabin máy bay hạng thương gia.</p>
+                        
+                        <div class="bus-amenities">
+                            <h4>Tiện nghi:</h4>
+                            <ul>
+                                <li>Ghế massage thư giãn</li>
+                                <li>Màn hình giải trí cá nhân</li>
+                                <li>Minibar & snack miễn phí</li>
+                                <li>Không gian riêng biệt</li>
+                                <li>Nhà vệ sinh cao cấp</li>
+                                <li>Tiếp viên phục vụ</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="price-info">
+                            <span class="price-label">Giá từ:</span>
+                            <span class="price">550.000đ</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bus-type-card">
+                    <div class="bus-image">
+                        <img src="assets/images/bus-standard.jpg" alt="Xe ghế ngồi">
+                    </div>
+                    <div class="bus-info">
+                        <h3>Ghế ngồi thương gia</h3>
+                        <p class="bus-description">41 ghế ngồi thoải mái với khoảng cách ghế rộng rãi, phù hợp cho các chuyến đi ngắn.</p>
+                        
+                        <div class="bus-amenities">
+                            <h4>Tiện nghi:</h4>
+                            <ul>
+                                <li>Ghế da cao cấp</li>
+                                <li>Điều hòa trung tâm</li>
+                                <li>USB sạc điện thoại</li>
+                                <li>Giải trí âm thanh</li>
+                                <li>Nước uống miễn phí</li>
+                                <li>Nhà vệ sinh sạch sẽ</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="price-info">
+                            <span class="price-label">Giá từ:</span>
+                            <span class="price">180.000đ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Routes & Schedule -->
+    <section class="routes-schedule" id="routes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tuyến đường & Lịch trình</h2>
+                <p class="section-subtitle">Mạng lưới tuyến đường phủ sóng toàn quốc</p>
+            </div>
+            
+            <div class="routes-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="popular">Tuyến phổ biến</button>
+                    <button class="tab-btn" data-tab="northern">Miền Bắc</button>
+                    <button class="tab-btn" data-tab="central">Miền Trung</button>
+                    <button class="tab-btn" data-tab="southern">Miền Nam</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="tab-pane active" id="popular">
+                        <div class="routes-grid">
+                            <div class="route-item">
+                                <div class="route-header">
+                                    <h4>TP. Hồ Chí Minh ↔ Đà Nẵng</h4>
+                                    <span class="route-distance">950 km</span>
+                                </div>
+                                <div class="route-details">
+                                    <div class="detail-item">
+                                        <span class="label">Thời gian:</span>
+                                        <span class="value">12-14 giờ</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="label">Tần suất:</span>
+                                        <span class="value">6 chuyến/ngày</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="label">Giờ khởi hành:</span>
+                                        <span class="value">06:00, 08:30, 14:00, 16:30, 20:00, 22:30</span>
+                                    </div>
+                                </div>
+                                <div class="route-price">
+                                    <span>Từ 350.000đ</span>
+                                    <a href="#booking" class="btn btn-primary btn-small">Đặt vé</a>
+                                </div>
+                            </div>
+                            
+                            <div class="route-item">
+                                <div class="route-header">
+                                    <h4>Hà Nội ↔ TP. Hồ Chí Minh</h4>
+                                    <span class="route-distance">1.700 km</span>
+                                </div>
+                                <div class="route-details">
+                                    <div class="detail-item">
+                                        <span class="label">Thời gian:</span>
+                                        <span class="value">18-20 giờ</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="label">Tần suất:</span>
+                                        <span class="value">4 chuyến/ngày</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="label">Giờ khởi hành:</span>
+                                        <span class="value">07:00, 14:00, 20:00, 22:00</span>
+                                    </div>
+                                </div>
+                                <div class="route-price">
+                                    <span>Từ 450.000đ</span>
+                                    <a href="#booking" class="btn btn-primary btn-small">Đặt vé</a>
+                                </div>
+                            </div>
+                            
+                            <div class="route-item">
+                                <div class="route-header">
+                                    <h4>TP. Hồ Chí Minh ↔ Cần Thơ</h4>
+                                    <span class="route-distance">180 km</span>
+                                </div>
+                                <div class="route-details">
+                                    <div class="detail-item">
+                                        <span class="label">Thời gian:</span>
+                                        <span class="value">3-4 giờ</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="label">Tần suất:</span>
+                                        <span class="value">10 chuyến/ngày</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="label">Giờ khởi hành:</span>
+                                        <span class="value">05:30, 07:00, 09:00, 11:00, 13:00...</span>
+                                    </div>
+                                </div>
+                                <div class="route-price">
+                                    <span>Từ 120.000đ</span>
+                                    <a href="#booking" class="btn btn-primary btn-small">Đặt vé</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section" id="booking">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Đặt vé trực tuyến</h2>
+                <p class="section-subtitle">Nhanh chóng, tiện lợi và an toàn</p>
+            </div>
+            
+            <div class="booking-form-container">
+                <form class="booking-form" id="busBookingForm">
+                    <div class="form-step active" data-step="1">
+                        <h3>Chọn tuyến đường</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="departure-city">Điểm đi</label>
+                                <select id="departure-city" name="departure-city" required>
+                                    <option value="">Chọn điểm đi</option>
+                                    <option value="hcm">TP. Hồ Chí Minh</option>
+                                    <option value="hanoi">Hà Nội</option>
+                                    <option value="danang">Đà Nẵng</option>
+                                    <option value="cantho">Cần Thơ</option>
+                                    <option value="nhatrang">Nha Trang</option>
+                                    <option value="dalat">Đà Lạt</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="arrival-city">Điểm đến</label>
+                                <select id="arrival-city" name="arrival-city" required>
+                                    <option value="">Chọn điểm đến</option>
+                                    <option value="hcm">TP. Hồ Chí Minh</option>
+                                    <option value="hanoi">Hà Nội</option>
+                                    <option value="danang">Đà Nẵng</option>
+                                    <option value="cantho">Cần Thơ</option>
+                                    <option value="nhatrang">Nha Trang</option>
+                                    <option value="dalat">Đà Lạt</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="travel-date">Ngày đi</label>
+                                <input type="date" id="travel-date" name="travel-date" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="passenger-count">Số hành khách</label>
+                                <select id="passenger-count" name="passenger-count" required>
+                                    <option value="1">1 hành khách</option>
+                                    <option value="2">2 hành khách</option>
+                                    <option value="3">3 hành khách</option>
+                                    <option value="4">4 hành khách</option>
+                                    <option value="5">5+ hành khách</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-primary" onclick="searchTrips()">Tìm chuyến</button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-step" data-step="2">
+                        <h3>Chọn chuyến</h3>
+                        <div id="trip-results" class="trip-results">
+                            <!-- Results will be populated here -->
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Features -->
+    <section class="safety-features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">An toàn là ưu tiên hàng đầu</h2>
+                <p class="section-subtitle">Cam kết bảo vệ hành khách với công nghệ và quy trình hiện đại</p>
+            </div>
+            
+            <div class="safety-grid">
+                <div class="safety-item">
+                    <div class="safety-icon">
+                        <img src="assets/images/driver-icon.svg" alt="Tài xế chuyên nghiệp">
+                    </div>
+                    <h4>Tài xế chuyên nghiệp</h4>
+                    <p>Đội ngũ tài xế được đào tạo bài bản, kinh nghiệm lâu năm và thường xuyên kiểm tra sức khỏe.</p>
+                </div>
+                
+                <div class="safety-item">
+                    <div class="safety-icon">
+                        <img src="assets/images/gps-icon.svg" alt="Giám sát GPS">
+                    </div>
+                    <h4>Giám sát GPS 24/7</h4>
+                    <p>Hệ thống GPS và camera giám sát trực tuyến, theo dõi tốc độ và hành trình xe liên tục.</p>
+                </div>
+                
+                <div class="safety-item">
+                    <div class="safety-icon">
+                        <img src="assets/images/maintenance-icon.svg" alt="Bảo trì định kỳ">
+                    </div>
+                    <h4>Bảo trì định kỳ</h4>
+                    <p>Xe được bảo trì và kiểm định kỹ thuật đều đặn theo tiêu chuẩn quốc gia và quốc tế.</p>
+                </div>
+                
+                <div class="safety-item">
+                    <div class="safety-icon">
+                        <img src="assets/images/insurance-icon.svg" alt="Bảo hiểm toàn diện">
+                    </div>
+                    <h4>Bảo hiểm toàn diện</h4>
+                    <p>Mỗi hành khách được bảo hiểm với mức bồi thường cao, an tâm suốt hành trình.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="customer-reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Khách hàng nói gì về chúng tôi</h2>
+                <p class="section-subtitle">Những phản hồi chân thực từ hành khách</p>
+            </div>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-text">5/5</span>
+                    </div>
+                    <p class="review-content">"Dịch vụ tuyệt vời! Xe sạch sẽ, tài xế lịch sự và đúng giờ. Giường nằm rất thoải mái, tôi đã ngủ ngon suốt đêm. Chắc chắn sẽ sử dụng lại."</p>
+                    <div class="reviewer-info">
+                        <img src="assets/images/customer1.jpg" alt="Nguyễn Thị Lan">
+                        <div class="reviewer-details">
+                            <h5>Nguyễn Thị Lan</h5>
+                            <span>Tuyến HCM - Đà Nẵng</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-text">5/5</span>
+                    </div>
+                    <p class="review-content">"Đặt vé online rất tiện, nhân viên hỗ trợ nhiệt tình. Xe Limousine sang trọng như mô tả, có cả màn hình giải trí và snack miễn phí."</p>
+                    <div class="reviewer-info">
+                        <img src="assets/images/customer2.jpg" alt="Trần Văn Hùng">
+                        <div class="reviewer-details">
+                            <h5>Trần Văn Hùng</h5>
+                            <span>Tuyến Hà Nội - HCM</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="rating-text">4/5</span>
+                    </div>
+                    <p class="review-content">"Lần đầu đi xe HOLO Bus Lines, cảm giác rất hài lòng. Giá cả hợp lý, dịch vụ tốt. Chỉ hơi tiếc là không có suất ăn cho chuyến dài."</p>
+                    <div class="reviewer-info">
+                        <img src="assets/images/customer3.jpg" alt="Lê Thị Mai">
+                        <div class="reviewer-details">
+                            <h5>Lê Thị Mai</h5>
+                            <span>Tuyến HCM - Cần Thơ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Bắt đầu hành trình với HOLO Bus Lines</h2>
+                <p>Đặt vé ngay hôm nay để trải nghiệm dịch vụ vận tải hành khách đẳng cấp</p>
+                <div class="cta-buttons">
+                    <a href="#booking" class="btn btn-primary">Đặt vé trực tuyến</a>
+                    <a href="tel:19001234" class="btn btn-secondary">Gọi hotline: 1900 1234</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo-white.png" alt="HOLO Group">
+                        <span>HOLO Group</span>
+                    </div>
+                    <p class="footer-desc">Kết nối hành trình - Tăng tốc tương lai. Tập đoàn hàng đầu Việt Nam về dịch vụ vận tải và logistics.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <img src="assets/images/facebook-icon.svg" alt="Facebook">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="assets/images/linkedin-icon.svg" alt="LinkedIn">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="assets/images/youtube-icon.svg" alt="YouTube">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Công ty thành viên</h4>
+                    <ul class="footer-links">
+                        <li><a href="holo-bus-lines.html">HOLO Bus Lines</a></li>
+                        <li><a href="holo-express.html">HOLO Express</a></li>
+                        <li><a href="subsidiaries.html">Tất cả công ty</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Dịch vụ</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Vận tải hành khách</a></li>
+                        <li><a href="services.html">Giao hàng Express</a></li>
+                        <li><a href="services.html">Logistics</a></li>
+                        <li><a href="services.html">Đặt vé online</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Thông tin</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Về chúng tôi</a></li>
+                        <li><a href="news.html">Tin tức</a></li>
+                        <li><a href="careers.html">Tuyển dụng</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="footer-legal">
+                        <span>&copy; 2025 HOLO Group. All rights reserved.</span>
+                        <div class="legal-links">
+                            <a href="legal/privacy.html">Chính sách bảo mật</a>
+                            <a href="legal/terms.html">Điều khoản sử dụng</a>
+                            <a href="legal/cookie.html">Chính sách Cookie</a>
+                        </div>
+                    </div>
+                    <div class="footer-contact">
+                        <span>Hotline: 1900 1234 | Email: info@holo-group.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom CSS for Bus Lines page -->
+    <style>
+        .bus-hero {
+            background: var(--gradient-primary);
+            padding: 140px 0 100px;
+            margin-top: 70px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bus-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('../images/bus-pattern.svg') repeat;
+            opacity: 0.1;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-text {
+            color: var(--white);
+        }
+
+        .brand-badge {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 24px;
+            padding: 12px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            width: fit-content;
+        }
+
+        .brand-badge img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .brand-badge span {
+            font-weight: 600;
+            color: var(--white);
+        }
+
+        .hero-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+        }
+
+        .feature-item .icon {
+            font-size: 1.2rem;
+        }
+
+        .bus-types {
+            padding: 120px 0;
+            background: var(--light-bg);
+        }
+
+        .bus-types-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 50px;
+        }
+
+        .bus-type-card {
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .bus-type-card.featured {
+            border: 3px solid var(--secondary-color);
+        }
+
+        .card-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--accent-color);
+            color: var(--white);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            z-index: 2;
+        }
+
+        .bus-type-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .bus-image {
+            height: 240px;
+            overflow: hidden;
+        }
+
+        .bus-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .bus-type-card:hover .bus-image img {
+            transform: scale(1.1);
+        }
+
+        .bus-info {
+            padding: 40px;
+        }
+
+        .bus-info h3 {
+            margin-bottom: 16px;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+
+        .bus-description {
+            color: var(--text-light);
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .bus-amenities {
+            margin-bottom: 30px;
+        }
+
+        .bus-amenities h4 {
+            margin-bottom: 16px;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+
+        .bus-amenities ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .bus-amenities li {
+            padding: 8px 0;
+            padding-left: 24px;
+            position: relative;
+            color: var(--text-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .bus-amenities li:last-child {
+            border-bottom: none;
+        }
+
+        .bus-amenities li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        .price-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: var(--light-bg);
+            border-radius: 12px;
+            margin: -20px;
+            margin-top: 20px;
+        }
+
+        .price-label {
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        .price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+        }
+
+        .routes-schedule {
+            padding: 120px 0;
+            background: var(--white);
+        }
+
+        .routes-tabs {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .tab-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            padding: 12px 24px;
+            border: 2px solid var(--border-color);
+            background: var(--white);
+            color: var(--text-color);
+            border-radius: 25px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 500;
+        }
+
+        .tab-btn.active,
+        .tab-btn:hover {
+            background: var(--secondary-color);
+            color: var(--white);
+            border-color: var(--secondary-color);
+        }
+
+        .tab-pane {
+            display: none;
+        }
+
+        .tab-pane.active {
+            display: block;
+        }
+
+        .routes-grid {
+            display: grid;
+            gap: 30px;
+        }
+
+        .route-item {
+            background: var(--light-bg);
+            border-radius: 16px;
+            padding: 30px;
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+
+        .route-item:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow);
+        }
+
+        .route-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .route-header h4 {
+            margin: 0;
+            color: var(--primary-color);
+        }
+
+        .route-distance {
+            background: var(--secondary-color);
+            color: var(--white);
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .route-details {
+            margin-bottom: 20px;
+        }
+
+        .detail-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            padding: 8px 0;
+        }
+
+        .detail-item .label {
+            font-weight: 500;
+            color: var(--text-color);
+        }
+
+        .detail-item .value {
+            color: var(--text-light);
+            text-align: right;
+            max-width: 60%;
+        }
+
+        .route-price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .route-price span {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--accent-color);
+        }
+
+        .booking-section {
+            padding: 120px 0;
+            background: var(--light-bg);
+        }
+
+        .booking-form-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .booking-form {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .form-step {
+            display: none;
+        }
+
+        .form-step.active {
+            display: block;
+        }
+
+        .form-step h3 {
+            margin-bottom: 30px;
+            color: var(--primary-color);
+            text-align: center;
+        }
+
+        .form-actions {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .trip-results {
+            margin-top: 30px;
+        }
+
+        .safety-features {
+            padding: 120px 0;
+            background: var(--white);
+        }
+
+        .safety-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 50px;
+        }
+
+        .safety-item {
+            text-align: center;
+            padding: 40px 30px;
+            background: var(--light-bg);
+            border-radius: 16px;
+            transition: var(--transition);
+        }
+
+        .safety-item:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow);
+        }
+
+        .safety-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 24px;
+            background: var(--gradient-accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .safety-icon img {
+            width: 40px;
+            height: 40px;
+            filter: brightness(0) invert(1);
+        }
+
+        .safety-item h4 {
+            margin-bottom: 16px;
+            color: var(--primary-color);
+        }
+
+        .safety-item p {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .customer-reviews {
+            padding: 120px 0;
+            background: var(--light-bg);
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .review-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .review-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .review-rating {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .stars {
+            color: var(--accent-color);
+            font-size: 1.2rem;
+        }
+
+        .rating-text {
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        .review-content {
+            color: var(--text-color);
+            line-height: 1.6;
+            margin-bottom: 24px;
+            font-style: italic;
+        }
+
+        .reviewer-info {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .reviewer-info img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .reviewer-details h5 {
+            margin-bottom: 4px;
+            color: var(--primary-color);
+        }
+
+        .reviewer-details span {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .cta-section {
+            padding: 120px 0;
+            background: var(--gradient-primary);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .cta-content h2 {
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .cta-content p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 50px;
+                text-align: center;
+            }
+
+            .hero-features {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+                margin: 30px auto 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .bus-types-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .tab-buttons {
+                gap: 4px;
+            }
+
+            .tab-btn {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+
+            .route-header {
+                flex-direction: column;
+                gap: 12px;
+                text-align: center;
+            }
+
+            .detail-item {
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            .detail-item .value {
+                text-align: left;
+                max-width: 100%;
+            }
+
+            .route-price {
+                flex-direction: column;
+                gap: 16px;
+                text-align: center;
+            }
+
+            .safety-grid,
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .booking-form {
+                padding: 30px;
+            }
+        }
+    </style>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Tab functionality
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active from all tabs
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+                
+                // Add active to clicked tab
+                btn.classList.add('active');
+                const tabId = btn.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+
+        // Search trips function
+        function searchTrips() {
+            const departure = document.getElementById('departure-city').value;
+            const arrival = document.getElementById('arrival-city').value;
+            const date = document.getElementById('travel-date').value;
+            
+            if (!departure || !arrival || !date) {
+                showNotification('Vui lòng điền đầy đủ thông tin', 'error');
+                return;
+            }
+            
+            if (departure === arrival) {
+                showNotification('Điểm đi và điểm đến không thể giống nhau', 'error');
+                return;
+            }
+            
+            // Show step 2
+            document.querySelector('[data-step="1"]').classList.remove('active');
+            document.querySelector('[data-step="2"]').classList.add('active');
+            
+            // Simulate search results
+            const results = `
+                <div class="trip-result">
+                    <div class="trip-info">
+                        <h4>06:00 - 18:00</h4>
+                        <p>Giường nằm VIP - 12 giờ</p>
+                    </div>
+                    <div class="trip-price">
+                        <span>350.000đ</span>
+                        <button class="btn btn-primary btn-small">Chọn</button>
+                    </div>
+                </div>
+                <div class="trip-result">
+                    <div class="trip-info">
+                        <h4>22:00 - 10:00+1</h4>
+                        <p>Limousine - 12 giờ</p>
+                    </div>
+                    <div class="trip-price">
+                        <span>550.000đ</span>
+                        <button class="btn btn-primary btn-small">Chọn</button>
+                    </div>
+                </div>
+            `;
+            
+            document.getElementById('trip-results').innerHTML = results;
+        }
+
+        // Set minimum date to today
+        document.getElementById('travel-date').min = new Date().toISOString().split('T')[0];
+    </script>
+</body>
+</html>

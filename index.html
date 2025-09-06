@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOLO Group - Kết nối hành trình, Tăng tốc tương lai</title>
+    <meta name="description" content="HOLO Group là tập đoàn hàng đầu Việt Nam về dịch vụ vận tải hành khách và logistics. An toàn - Đúng giờ - Minh bạch - Chăm sóc khách hàng.">
+    <meta name="keywords" content="HOLO Group, vận tải, logistics, bus lines, express, hành khách, giao hàng">
+    <meta name="author" content="HOLO Group">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="HOLO Group - Kết nối hành trình, Tăng tốc tương lai">
+    <meta property="og:description" content="Tập đoàn hàng đầu về dịch vụ vận tải và logistics tại Việt Nam">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://holo-group.com">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Condensed:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "HOLO Group",
+        "alternateName": "Công ty TNHH MTV HOLO Group",
+        "url": "https://holo-group.com",
+        "logo": "https://holo-group.com/assets/images/logo.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+84-123-456-789",
+            "contactType": "customer service",
+            "areaServed": "VN",
+            "availableLanguage": ["Vietnamese", "English"]
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Nguyễn Du",
+            "addressLocality": "TP. Hồ Chí Minh",
+            "postalCode": "700000",
+            "addressCountry": "VN"
+        },
+        "sameAs": [
+            "https://facebook.com/hologroup",
+            "https://linkedin.com/company/holo-group"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="assets/images/logo.png" alt="HOLO Group" class="logo">
+                    <span class="brand-text">HOLO Group</span>
+                </div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Trang chủ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Về chúng tôi</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">Giới thiệu</a></li>
+                            <li><a href="subsidiaries.html">Công ty thành viên</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Dịch vụ</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services.html">Tổng quan dịch vụ</a></li>
+                            <li><a href="holo-bus-lines.html">HOLO Bus Lines</a></li>
+                            <li><a href="holo-express.html">HOLO Express</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link">Tin tức</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="careers.html" class="nav-link">Tuyển dụng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Liên hệ</a>
+                    </li>
+                    <li class="nav-item lang-switch">
+                        <a href="#" class="nav-link" onclick="toggleLanguage()">EN</a>
+                    </li>
+                </ul>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Kết nối hành trình<br><span class="highlight">Tăng tốc tương lai</span></h1>
+                <p class="hero-subtitle">Tập đoàn HOLO Group - Dẫn đầu trong lĩnh vực vận tải hành khách và logistics tại Việt Nam với cam kết an toàn, đúng giờ và chăm sóc khách hàng tận tâm.</p>
+                <div class="hero-buttons">
+                    <a href="#route-finder" class="btn btn-primary">Đặt vé ngay</a>
+                    <a href="#tracking" class="btn btn-secondary">Tra cứu vận đơn</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/hero-bus.jpg" alt="HOLO Group Services">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Dịch vụ của chúng tôi</h2>
+                <p class="section-subtitle">Giải pháp vận tải toàn diện cho mọi nhu cầu</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="assets/images/bus-icon.svg" alt="Bus Service">
+                    </div>
+                    <h3>HOLO Bus Lines</h3>
+                    <p>Dịch vụ vận tải hành khách liên tỉnh với hệ thống xe hiện đại, an toàn và tiện nghi cao cấp.</p>
+                    <ul class="service-features">
+                        <li>Xe giường nằm cao cấp</li>
+                        <li>WiFi miễn phí</li>
+                        <li>Đặt vé online</li>
+                        <li>Bảo hiểm hành khách</li>
+                    </ul>
+                    <a href="holo-bus-lines.html" class="btn btn-outline">Tìm hiểu thêm</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="assets/images/express-icon.svg" alt="Express Service">
+                    </div>
+                    <h3>HOLO Express</h3>
+                    <p>Dịch vụ giao hàng nhanh và logistics với mạng lưới rộng khắp, đảm bảo hàng hóa an toàn.</p>
+                    <ul class="service-features">
+                        <li>Giao hàng trong ngày</li>
+                        <li>Theo dõi realtime</li>
+                        <li>Bảo hiểm hàng hóa</li>
+                        <li>Thu hộ COD</li>
+                    </ul>
+                    <a href="holo-express.html" class="btn btn-outline">Tìm hiểu thêm</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="assets/images/logistics-icon.svg" alt="Logistics Service">
+                    </div>
+                    <h3>Giải pháp Logistics</h3>
+                    <p>Dịch vụ logistics tổng thể từ kho bãi, vận chuyển đến phân phối cho doanh nghiệp.</p>
+                    <ul class="service-features">
+                        <li>Quản lý kho bãi</li>
+                        <li>Vận chuyển B2B</li>
+                        <li>Phân phối cuối cùng</li>
+                        <li>Tư vấn chuỗi cung ứng</li>
+                    </ul>
+                    <a href="services.html" class="btn btn-outline">Tìm hiểu thêm</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Tuyến đường</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="1200">0</div>
+                    <div class="stat-label">Phương tiện</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="2500000">0</div>
+                    <div class="stat-label">Khách hàng tin tưởng</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="150">0</div>
+                    <div class="stat-label">Điểm phục vụ</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Route Finder -->
+    <section class="route-finder" id="route-finder">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tìm chuyến đi</h2>
+                <p class="section-subtitle">Đặt vé xe khách nhanh chóng và tiện lợi</p>
+            </div>
+            <div class="route-finder-form">
+                <form id="routeForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="departure">Điểm đi</label>
+                            <select id="departure" name="departure" required>
+                                <option value="">Chọn điểm đi</option>
+                                <option value="hcm">TP. Hồ Chí Minh</option>
+                                <option value="hanoi">Hà Nội</option>
+                                <option value="danang">Đà Nẵng</option>
+                                <option value="cantho">Cần Thơ</option>
+                                <option value="haiphong">Hải Phòng</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="destination">Điểm đến</label>
+                            <select id="destination" name="destination" required>
+                                <option value="">Chọn điểm đến</option>
+                                <option value="hcm">TP. Hồ Chí Minh</option>
+                                <option value="hanoi">Hà Nội</option>
+                                <option value="danang">Đà Nẵng</option>
+                                <option value="cantho">Cần Thơ</option>
+                                <option value="haiphong">Hải Phòng</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="departure-date">Ngày đi</label>
+                            <input type="date" id="departure-date" name="departure-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="passengers">Số khách</label>
+                            <select id="passengers" name="passengers">
+                                <option value="1">1 khách</option>
+                                <option value="2">2 khách</option>
+                                <option value="3">3 khách</option>
+                                <option value="4">4 khách</option>
+                                <option value="5">5+ khách</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Tìm chuyến</button>
+                        </div>
+                    </div>
+                </form>
+                <div id="route-results" class="route-results"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tracking Section -->
+    <section class="tracking" id="tracking">
+        <div class="container">
+            <div class="tracking-content">
+                <div class="tracking-form">
+                    <h3>Tra cứu vận đơn</h3>
+                    <p>Nhập mã vận đơn để theo dõi tình trạng gói hàng</p>
+                    <form id="trackingForm">
+                        <div class="input-group">
+                            <input type="text" id="tracking-code" placeholder="Nhập mã vận đơn" required>
+                            <button type="submit" class="btn btn-primary">Tra cứu</button>
+                        </div>
+                    </form>
+                    <div id="tracking-result" class="tracking-result"></div>
+                </div>
+                <div class="tracking-image">
+                    <img src="assets/images/tracking-illustration.svg" alt="Package Tracking">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Routes -->
+    <section class="featured-routes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tuyến đường nổi bật</h2>
+                <p class="section-subtitle">Những tuyến đường được ưa chuộng nhất</p>
+            </div>
+            <div class="routes-grid">
+                <div class="route-card">
+                    <div class="route-header">
+                        <h4>TP. Hồ Chí Minh ↔ Đà Nẵng</h4>
+                        <span class="route-price">Từ 350.000đ</span>
+                    </div>
+                    <div class="route-info">
+                        <div class="route-time">
+                            <span>Thời gian: 12-14 giờ</span>
+                        </div>
+                        <div class="route-frequency">
+                            <span>Tần suất: 6 chuyến/ngày</span>
+                        </div>
+                    </div>
+                    <a href="#route-finder" class="btn btn-outline">Đặt vé</a>
+                </div>
+                
+                <div class="route-card">
+                    <div class="route-header">
+                        <h4>Hà Nội ↔ TP. Hồ Chí Minh</h4>
+                        <span class="route-price">Từ 450.000đ</span>
+                    </div>
+                    <div class="route-info">
+                        <div class="route-time">
+                            <span>Thời gian: 18-20 giờ</span>
+                        </div>
+                        <div class="route-frequency">
+                            <span>Tần suất: 4 chuyến/ngày</span>
+                        </div>
+                    </div>
+                    <a href="#route-finder" class="btn btn-outline">Đặt vé</a>
+                </div>
+                
+                <div class="route-card">
+                    <div class="route-header">
+                        <h4>TP. Hồ Chí Minh ↔ Cần Thơ</h4>
+                        <span class="route-price">Từ 120.000đ</span>
+                    </div>
+                    <div class="route-info">
+                        <div class="route-time">
+                            <span>Thời gian: 3-4 giờ</span>
+                        </div>
+                        <div class="route-frequency">
+                            <span>Tần suất: 10 chuyến/ngày</span>
+                        </div>
+                    </div>
+                    <a href="#route-finder" class="btn btn-outline">Đặt vé</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners -->
+    <section class="partners">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Đối tác tin cậy</h2>
+                <p class="section-subtitle">Cùng phát triển với những thương hiệu hàng đầu</p>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <img src="assets/images/partner1.png" alt="Partner 1">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/images/partner2.png" alt="Partner 2">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/images/partner3.png" alt="Partner 3">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/images/partner4.png" alt="Partner 4">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/images/partner5.png" alt="Partner 5">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/images/partner6.png" alt="Partner 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tin tức mới nhất</h2>
+                <p class="section-subtitle">Cập nhật thông tin và hoạt động của HOLO Group</p>
+            </div>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="assets/images/news1.jpg" alt="News 1">
+                        <span class="news-date">15 Tháng 8, 2025</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>HOLO Group mở rộng mạng lưới vận tải ra 5 tỉnh mới</h3>
+                        <p>Tập đoàn chính thức vận hành các tuyến mới tại khu vực miền Trung và Tây Nguyên...</p>
+                        <a href="news.html" class="read-more">Đọc thêm</a>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="assets/images/news2.jpg" alt="News 2">
+                        <span class="news-date">10 Tháng 8, 2025</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>Ứng dụng di động HOLO ra mắt phiên bản 2.0</h3>
+                        <p>Nhiều tính năng mới được bổ sung giúp khách hàng trải nghiệm dịch vụ tốt hơn...</p>
+                        <a href="news.html" class="read-more">Đọc thêm</a>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="assets/images/news3.jpg" alt="News 3">
+                        <span class="news-date">5 Tháng 8, 2025</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>HOLO Express đạt chứng nhận ISO 9001:2015</h3>
+                        <p>Khẳng định cam kết về chất lượng dịch vụ và quy trình vận hành chuẩn quốc tế...</p>
+                        <a href="news.html" class="read-more">Đọc thêm</a>
+                    </div>
+                </article>
+            </div>
+            <div class="section-footer">
+                <a href="news.html" class="btn btn-outline">Xem tất cả tin tức</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form" id="contact-form">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Liên hệ với chúng tôi</h3>
+                    <p>Để lại thông tin, chúng tôi sẽ liên hệ tư vấn trong thời gian sớm nhất.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <strong>Hotline:</strong>
+                            <span>1900 1234</span>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Email:</strong>
+                            <span>info@holo-group.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Địa chỉ:</strong>
+                            <span>123 Nguyễn Du, Q.1, TP. Hồ Chí Minh</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="quick-contact-form" id="quickContactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Họ và tên *" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email *" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Số điện thoại *" required>
+                    </div>
+                    <div class="form-group">
+                        <select name="service" required>
+                            <option value="">Dịch vụ quan tâm</option>
+                            <option value="bus">HOLO Bus Lines</option>
+                            <option value="express">HOLO Express</option>
+                            <option value="logistics">Logistics</option>
+                            <option value="other">Khác</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Nội dung tin nhắn" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Gửi thông tin</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo-white.png" alt="HOLO Group">
+                        <span>HOLO Group</span>
+                    </div>
+                    <p class="footer-desc">Kết nối hành trình - Tăng tốc tương lai. Tập đoàn hàng đầu Việt Nam về dịch vụ vận tải và logistics.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <img src="assets/images/facebook-icon.svg" alt="Facebook">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="assets/images/linkedin-icon.svg" alt="LinkedIn">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="assets/images/youtube-icon.svg" alt="YouTube">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Công ty thành viên</h4>
+                    <ul class="footer-links">
+                        <li><a href="holo-bus-lines.html">HOLO Bus Lines</a></li>
+                        <li><a href="holo-express.html">HOLO Express</a></li>
+                        <li><a href="subsidiaries.html">Tất cả công ty</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Dịch vụ</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Vận tải hành khách</a></li>
+                        <li><a href="services.html">Giao hàng Express</a></li>
+                        <li><a href="services.html">Logistics</a></li>
+                        <li><a href="services.html">Đặt vé online</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Thông tin</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Về chúng tôi</a></li>
+                        <li><a href="news.html">Tin tức</a></li>
+                        <li><a href="careers.html">Tuyển dụng</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="footer-legal">
+                        <span>&copy; 2025 HOLO Group. All rights reserved.</span>
+                        <div class="legal-links">
+                            <a href="legal/privacy.html">Chính sách bảo mật</a>
+                            <a href="legal/terms.html">Điều khoản sử dụng</a>
+                            <a href="legal/cookie.html">Chính sách Cookie</a>
+                        </div>
+                    </div>
+                    <div class="footer-contact">
+                        <span>Hotline: 1900 1234 | Email: info@holo-group.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - HOLO Group</title>
+    <meta name="description" content="Liên hệ với HOLO Group để được tư vấn và hỗ trợ về dịch vụ vận tải, logistics. Hotline 24/7, văn phòng tại TP.HCM, Hà Nội, Đà Nẵng.">
+    <meta name="keywords" content="liên hệ HOLO Group, hotline vận tải, địa chỉ văn phòng, hỗ trợ khách hàng">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Condensed:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="assets/images/logo.png" alt="HOLO Group" class="logo">
+                    <span class="brand-text">HOLO Group</span>
+                </div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Trang chủ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Về chúng tôi</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">Giới thiệu</a></li>
+                            <li><a href="subsidiaries.html">Công ty thành viên</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Dịch vụ</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services.html">Tổng quan dịch vụ</a></li>
+                            <li><a href="holo-bus-lines.html">HOLO Bus Lines</a></li>
+                            <li><a href="holo-express.html">HOLO Express</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link">Tin tức</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="careers.html" class="nav-link">Tuyển dụng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">Liên hệ</a>
+                    </li>
+                    <li class="nav-item lang-switch">
+                        <a href="#" class="nav-link" onclick="toggleLanguage()">EN</a>
+                    </li>
+                </ul>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="hero-content">
+                <nav class="breadcrumb">
+                    <a href="index.html">Trang chủ</a>
+                    <span>/</span>
+                    <span>Liên hệ</span>
+                </nav>
+                <h1>Liên hệ với chúng tôi</h1>
+                <p class="hero-subtitle">Chúng tôi luôn sẵn sàng hỗ trợ bạn 24/7. Hãy liên hệ để được tư vấn tốt nhất về dịch vụ vận tải và logistics.</p>
+                
+                <div class="quick-contact">
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-info">
+                            <h4>Hotline 24/7</h4>
+                            <a href="tel:19001234">1900 1234</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-info">
+                            <h4>Email hỗ trợ</h4>
+                            <a href="mailto:info@holo-group.com">info@holo-group.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">💬</div>
+                        <div class="contact-info">
+                            <h4>Live Chat</h4>
+                            <button class="btn btn-small btn-primary" onclick="openLiveChat()">Bắt đầu chat</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-form-section">
+                    <h2>Gửi tin nhắn cho chúng tôi</h2>
+                    <p>Điền thông tin bên dưới và chúng tôi sẽ phản hồi trong vòng 24 giờ.</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="full-name">Họ và tên *</label>
+                                <input type="text" id="full-name" name="full-name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Số điện thoại</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company">Công ty/Tổ chức</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Dịch vụ quan tâm</label>
+                            <select id="service" name="service">
+                                <option value="">Chọn dịch vụ</option>
+                                <option value="bus">Vận tải hành khách (HOLO Bus Lines)</option>
+                                <option value="express">Giao hàng nhanh (HOLO Express)</option>
+                                <option value="logistics">Logistics B2B</option>
+                                <option value="partnership">Hợp tác kinh doanh</option>
+                                <option value="other">Khác</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Tiêu đề *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Nội dung tin nhắn *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Mô tả chi tiết yêu cầu của bạn..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="newsletter" id="newsletter">
+                                <span class="checkmark"></span>
+                                Tôi muốn nhận thông tin khuyến mãi và tin tức từ HOLO Group
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="terms" id="terms" required>
+                                <span class="checkmark"></span>
+                                Tôi đã đọc và đồng ý với <a href="legal/privacy.html">chính sách bảo mật</a>
+                            </label>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Gửi tin nhắn</button>
+                            <button type="reset" class="btn btn-outline">Làm mới</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="map-section">
+                    <h3>Vị trí văn phòng</h3>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6306852257154!2d106.69977331480053!3d10.762622992334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f1c06f4e1dd%3A0x43900f1d4539a3d!2sHo%20Chi%20Minh%20City%2C%20Vietnam!5e0!3m2!1sen!2s!4v1642086432890!5m2!1sen!2s" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0; border-radius: 12px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    
+                    <div class="office-info">
+                        <h4>Trụ sở chính - TP. Hồ Chí Minh</h4>
+                        <div class="info-item">
+                            <span class="icon">📍</span>
+                            <span>123 Nguyễn Huệ, Quận 1, TP. Hồ Chí Minh</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">📞</span>
+                            <span>(028) 3822 1234</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">🕒</span>
+                            <span>T2-T6: 8:00-17:30 | T7: 8:00-12:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Locations -->
+    <section class="office-locations">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Văn phòng & Chi nhánh</h2>
+                <p class="section-subtitle">Mạng lưới văn phòng rộng khắp cả nước</p>
+            </div>
+            
+            <div class="offices-grid">
+                <div class="office-card">
+                    <div class="office-image">
+                        <img src="assets/images/office-hcm.jpg" alt="Văn phòng TP.HCM">
+                    </div>
+                    <div class="office-content">
+                        <h4>Trụ sở chính - TP. Hồ Chí Minh</h4>
+                        <div class="office-details">
+                            <div class="detail-item">
+                                <span class="icon">📍</span>
+                                <span>123 Nguyễn Huệ, Quận 1, TP. HCM</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="icon">📞</span>
+                                <span>(028) 3822 1234</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="icon">✉️</span>
+                                <span>hcm@holo-group.com</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="icon">🏢</span>
+                                <span>Văn phòng chính, Trung tâm điều hành</span>
+                            </div>
+                        </div>
+                        <div class="office-services">
+                            <span class="service-tag">Tổng đài</span>
+                            <span class="service-tag">Hỗ trợ khách hàng</span>
+                            <span class="service-tag">Điều hành vận tải</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="office-card">
+                    <div class="office-image">
+                        <img src="assets/images/office-hanoi.jpg" alt="Văn phòng Hà Nội">
+                    </div>
+                    <div class="office-content">
+                        <h4>Chi nhánh Hà Nội</h4>
+                        <div class="office-details">
+                            <div class="detail-item">
+                                <span class="icon">📍</span>
+                                <span>456 Hoàng Kiếm, Hoàn Kiếm, Hà Nội</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="icon">📞</span>
+                                <span>(024) 3936 5678</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="icon">✉️</span>
+                                <span>hanoi@holo-group.com</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="icon">🏢</span>
+                                <span>Phụ trách khu vực miền Bắc</span>
+                            </div>
+                        </div>
+                        <div class="office-services">
+                            <span class="service-tag">Vận tải miền Bắc</span>
+                            <span class="service-tag">Logistics</span>
+                            <span class="service-tag">Đặt vé online</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="office-card">
+                    <div class="office-image">
+                        <img src="assets/images/office-danang.jpg" alt="Văn phòng Đà Nẵng">
+                    </div>
+                    <div class="office-content">
+                        <h4>Chi nhánh Đà Nẵng</h4>
+                        <div class="office-details">
+                            <div class="detail-item">
+                                <span class="icon">📍</span>
+                                <span>789 Trần Phú, Hải Châu, Đà Nẵng</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="icon">📞</span>
+                                <span>(0236) 3821 999</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="icon">✉️</span>
+                                <span>danang@holo-group.com</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="icon">🏢</span>
+                                <span>Phụ trách khu vực miền Trung</span>
+                            </div>
+                        </div>
+                        <div class="office-services">
+                            <span class="service-tag">Vận tải miền Trung</span>
+                            <span class="service-tag">Express</span>
+                            <span class="service-tag">Tuyển dụng</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="office-card">
+                    <div class="office-image">
+                        <img src="assets/images/office-cantho.jpg" alt="Văn phòng Cần Thơ">
+                    </div>
+                    <div class="office-content">
+                        <h4>Chi nhánh Cần Thơ</h4>
+                        <div class="office-details">
+                            <div class="detail-item">
+                                <span class="icon">📍</span>
+                                <span>321 Nguyễn Văn Cừ, Ninh Kiều, Cần Thơ</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="icon">📞</span>
+                                <span>(0292) 3810 555</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="icon">✉️</span>
+                                <span>cantho@holo-group.com</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="icon">🏢</span>
+                                <span>Phụ trách khu vực Đồng bằng sông Cửu Long</span>
+                            </div>
+                        </div>
+                        <div class="office-services">
+                            <span class="service-tag">Vận tải ĐBSCL</span>
+                            <span class="service-tag">Nông sản</span>
+                            <span class="service-tag">Cold chain</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Channels -->
+    <section class="support-channels">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Kênh hỗ trợ khách hàng</h2>
+                <p class="section-subtitle">Nhiều cách để liên hệ với chúng tôi</p>
+            </div>
+            
+            <div class="channels-grid">
+                <div class="channel-card">
+                    <div class="channel-icon">📞</div>
+                    <h4>Hotline 24/7</h4>
+                    <p>Hỗ trợ khách hàng 24/7, bao gồm cả ngày lễ và cuối tuần.</p>
+                    <div class="channel-info">
+                        <strong>1900 1234</strong>
+                        <span>Miễn phí từ điện thoại cố định</span>
+                    </div>
+                    <div class="channel-details">
+                        <div class="detail-item">
+                            <span>🎯 Đặt vé xe khách</span>
+                        </div>
+                        <div class="detail-item">
+                            <span>📦 Tra cứu đơn hàng</span>
+                        </div>
+                        <div class="detail-item">
+                            <span>💼 Hỗ trợ doanh nghiệp</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="channel-card">
+                    <div class="channel-icon">✉️</div>
+                    <h4>Email Support</h4>
+                    <p>Gửi email cho chúng tôi và nhận phản hồi trong vòng 24 giờ.</p>
+                    <div class="channel-info">
+                        <strong>info@holo-group.com</strong>
+                        <span>Phản hồi trong 24h</span>
+                    </div>
+                    <div class="channel-details">
+                        <div class="detail-item">
+                            <span>📋 Khiếu nại/góp ý</span>
+                        </div>
+                        <div class="detail-item">
+                            <span>🤝 Hợp tác kinh doanh</span>
+                        </div>
+                        <div class="detail-item">
+                            <span>📄 Hỗ trợ kỹ thuật</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="channel-card">
+                    <div class="channel-icon">💬</div>
+                    <h4>Live Chat</h4>
+                    <p>Chat trực tiếp với nhân viên hỗ trợ qua website hoặc app.</p>
+                    <div class="channel-info">
+                        <strong>Trực tuyến</strong>
+                        <span>T2-CN: 6:00-22:00</span>
+                    </div>
+                    <div class="channel-details">
+                        <div class="detail-item">
+                            <span>⚡ Phản hồi tức thì</span>
+                        </div>
+                        <div class="detail-item">
+                            <span>🎯 Tư vấn nhanh</span>
+                        </div>
+                        <div class="detail-item">
+                            <span>📱 Đa nền tảng</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="openLiveChat()">Bắt đầu chat</button>
+                </div>
+                
+                <div class="channel-card">
+                    <div class="channel-icon">📱</div>
+                    <h4>Mạng xã hội</h4>
+                    <p>Theo dõi và liên hệ qua các kênh mạng xã hội chính thức.</p>
+                    <div class="channel-info">
+                        <strong>Social Media</strong>
+                        <span>Cập nhật 24/7</span>
+                    </div>
+                    <div class="social-channels">
+                        <a href="#" class="social-channel">
+                            <img src="assets/images/facebook-icon.svg" alt="Facebook">
+                            <span>Facebook</span>
+                        </a>
+                        <a href="#" class="social-channel">
+                            <img src="assets/images/linkedin-icon.svg" alt="LinkedIn">
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="#" class="social-channel">
+                            <img src="assets/images/youtube-icon.svg" alt="YouTube">
+                            <span>YouTube</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Câu hỏi thường gặp</h2>
+                <p class="section-subtitle">Tìm câu trả lời nhanh cho những thắc mắc phổ biến</p>
+            </div>
+            
+            <div class="faq-content">
+                <div class="faq-categories">
+                    <button class="faq-category active" data-category="general">Chung</button>
+                    <button class="faq-category" data-category="booking">Đặt vé</button>
+                    <button class="faq-category" data-category="shipping">Giao hàng</button>
+                    <button class="faq-category" data-category="payment">Thanh toán</button>
+                </div>
+                
+                <div class="faq-list" id="faqList">
+                    <div class="faq-item" data-category="general">
+                        <div class="faq-question">
+                            <h4>HOLO Group cung cấp những dịch vụ gì?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>HOLO Group cung cấp 2 dịch vụ chính: HOLO Bus Lines (vận tải hành khách liên tỉnh) và HOLO Express (giao hàng nhanh & logistics). Chúng tôi phục vụ toàn quốc với mạng lưới rộng khắp 63 tỉnh thành.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item" data-category="general">
+                        <div class="faq-question">
+                            <h4>Làm thế nào để liên hệ với HOLO Group?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Bạn có thể liên hệ qua: Hotline 1900 1234 (24/7), Email info@holo-group.com, Live chat trên website, hoặc ghé trực tiếp văn phòng tại TP.HCM, Hà Nội, Đà Nẵng, Cần Thơ.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item" data-category="booking">
+                        <div class="faq-question">
+                            <h4>Làm sao để đặt vé xe khách online?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Truy cập website HOLO Group, chọn "Đặt vé", nhập thông tin chuyến đi (điểm đi, điểm đến, ngày), chọn chuyến xe phù hợp, điền thông tin hành khách và thanh toán online. Vé sẽ được gửi qua SMS/Email.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item" data-category="booking">
+                        <div class="faq-question">
+                            <h4>Có thể hủy hoặc đổi vé không?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Có thể hủy/đổi vé trước giờ khởi hành 2 giờ. Phí hủy vé: 10% giá vé (trước 24h), 20% (12-24h), 50% (2-12h). Đổi vé miễn phí lần đầu nếu còn chỗ trống.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item" data-category="shipping">
+                        <div class="faq-question">
+                            <h4>HOLO Express giao hàng trong bao lâu?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Express 24h: Giao trong 24h nội thành, 48h liên tỉnh. Standard: 2-3 ngày. Economy: 4-7 ngày. Thời gian có thể thay đổi tùy địa điểm và điều kiện thời tiết.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item" data-category="shipping">
+                        <div class="faq-question">
+                            <h4>Làm sao để tra cứu đơn hàng?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Nhập mã đơn hàng (format: HX + 9 số) vào ô "Tra cứu đơn hàng" trên website hoặc app HOLO. Bạn sẽ thấy trạng thái và lịch sử di chuyển của đơn hàng theo thời gian thực.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item" data-category="payment">
+                        <div class="faq-question">
+                            <h4>HOLO Group chấp nhận những hình thức thanh toán nào?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Chúng tôi chấp nhận: Tiền mặt, Thẻ ATM/Visa/Mastercard, Ví điện tử (MoMo, ZaloPay, VNPay), Internet Banking, và COD (thu hộ) cho dịch vụ giao hàng.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo-white.png" alt="HOLO Group">
+                        <span>HOLO Group</span>
+                    </div>
+                    <p class="footer-desc">Kết nối hành trình - Tăng tốc tương lai. Tập đoàn hàng đầu Việt Nam về dịch vụ vận tải và logistics.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <img src="assets/images/facebook-icon.svg" alt="Facebook">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="assets/images/linkedin-icon.svg" alt="LinkedIn">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="assets/images/youtube-icon.svg" alt="YouTube">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Công ty thành viên</h4>
+                    <ul class="footer-links">
+                        <li><a href="holo-bus-lines.html">HOLO Bus Lines</a></li>
+                        <li><a href="holo-express.html">HOLO Express</a></li>
+                        <li><a href="subsidiaries.html">Tất cả công ty</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Dịch vụ</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Vận tải hành khách</a></li>
+                        <li><a href="services.html">Giao hàng Express</a></li>
+                        <li><a href="services.html">Logistics</a></li>
+                        <li><a href="services.html">Đặt vé online</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Thông tin</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Về chúng tôi</a></li>
+                        <li><a href="news.html">Tin tức</a></li>
+                        <li><a href="careers.html">Tuyển dụng</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="footer-legal">
+                        <span>&copy; 2025 HOLO Group. All rights reserved.</span>
+                        <div class="legal-links">
+                            <a href="legal/privacy.html">Chính sách bảo mật</a>
+                            <a href="legal/terms.html">Điều khoản sử dụng</a>
+                            <a href="legal/cookie.html">Chính sách Cookie</a>
+                        </div>
+                    </div>
+                    <div class="footer-contact">
+                        <span>Hotline: 1900 1234 | Email: info@holo-group.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom CSS for Contact page -->
+    <style>
+        .contact-hero {
+            background: var(--gradient-primary);
+            padding: 140px 0 100px;
+            margin-top: 70px;
+            color: var(--white);
+            text-align: center;
+        }
+
+        .breadcrumb {
+            margin-bottom: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .breadcrumb a:hover {
+            color: var(--white);
+        }
+
+        .breadcrumb span {
+            opacity: 0.6;
+        }
+
+        .contact-hero h1 {
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 50px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .quick-contact {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .quick-contact .contact-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .contact-icon {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+        }
+
+        .contact-info h4 {
+            margin-bottom: 12px;
+            color: var(--white);
+            font-size: 1.1rem;
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        .contact-main {
+            padding: 120px 0;
+            background: var(--light-bg);
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 80px;
+        }
+
+        .contact-form-section h2 {
+            margin-bottom: 16px;
+            color: var(--primary-color);
+        }
+
+        .contact-form-section p {
+            color: var(--text-light);
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+
+        .contact-form {
+            background: var(--white);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            cursor: pointer;
+            line-height: 1.5;
+        }
+
+        .checkbox-item input[type="checkbox"] {
+            display: none;
+        }
+
+        .checkmark {
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--border-color);
+            border-radius: 4px;
+            position: relative;
+            transition: var(--transition);
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .checkbox-item input[type="checkbox"]:checked + .checkmark {
+            background: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+
+        .checkbox-item input[type="checkbox"]:checked + .checkmark::after {
+            content: '✓';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--white);
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .checkbox-item a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        .checkbox-item a:hover {
+            text-decoration: underline;
+        }
+
+        .map-section h3 {
+            margin-bottom: 24px;
+            color: var(--primary-color);
+        }
+
+        .map-container {
+            margin-bottom: 30px;
+        }
+
+        .office-info {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+        }
+
+        .office-info h4 {
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            color: var(--text-color);
+        }
+
+        .info-item .icon {
+            font-size: 1.1rem;
+            width: 20px;
+        }
+
+        .office-locations {
+            padding: 120px 0;
+            background: var(--white);
+        }
+
+        .offices-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+        }
+
+        .office-card {
+            background: var(--light-bg);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .office-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .office-image {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .office-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .office-card:hover .office-image img {
+            transform: scale(1.1);
+        }
+
+        .office-content {
+            padding: 30px;
+        }
+
+        .office-content h4 {
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .office-details {
+            margin-bottom: 20px;
+        }
+
+        .office-details .detail-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 12px;
+            color: var(--text-color);
+        }
+
+        .office-details .icon {
+            font-size: 1rem;
+            width: 16px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .office-services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .service-tag {
+            background: var(--secondary-color);
+            color: var(--white);
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .support-channels {
+            padding: 120px 0;
+            background: var(--light-bg);
+        }
+
+        .channels-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .channel-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .channel-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .channel-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .channel-card h4 {
+            margin-bottom: 16px;
+            color: var(--primary-color);
+        }
+
+        .channel-card p {
+            color: var(--text-light);
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+
+        .channel-info {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: var(--light-bg);
+            border-radius: 12px;
+        }
+
+        .channel-info strong {
+            display: block;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        .channel-info span {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .channel-details {
+            margin-bottom: 24px;
+        }
+
+        .channel-details .detail-item {
+            padding: 8px 0;
+            color: var(--text-color);
+            font-size: 0.9rem;
+        }
+
+        .social-channels {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .social-channel {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: var(--light-bg);
+            border-radius: 20px;
+            text-decoration: none;
+            color: var(--text-color);
+            transition: var(--transition);
+        }
+
+        .social-channel:hover {
+            background: var(--secondary-color);
+            color: var(--white);
+        }
+
+        .social-channel img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .social-channel:hover img {
+            filter: brightness(0) invert(1);
+        }
+
+        .faq-section {
+            padding: 120px 0;
+            background: var(--white);
+        }
+
+        .faq-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-categories {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+
+        .faq-category {
+            padding: 12px 24px;
+            border: 2px solid var(--border-color);
+            background: transparent;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 500;
+            color: var(--text-color);
+        }
+
+        .faq-category.active,
+        .faq-category:hover {
+            background: var(--secondary-color);
+            color: var(--white);
+            border-color: var(--secondary-color);
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            background: var(--light-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 30px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .faq-question:hover {
+            background: rgba(20, 184, 166, 0.1);
+        }
+
+        .faq-question h4 {
+            margin: 0;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+
+        .faq-toggle {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            font-weight: bold;
+            transition: var(--transition);
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            padding: 0 30px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+            padding: 0 30px 24px;
+        }
+
+        .faq-answer p {
+            color: var(--text-light);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .quick-contact {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contact-form {
+                padding: 30px;
+            }
+
+            .offices-grid,
+            .channels-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .faq-categories {
+                gap: 8px;
+            }
+
+            .faq-category {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+
+            .faq-question {
+                padding: 20px;
+            }
+
+            .faq-answer {
+                padding: 0 20px;
+            }
+
+            .faq-item.active .faq-answer {
+                padding: 0 20px 20px;
+            }
+        }
+    </style>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Basic validation
+            if (!data['full-name'] || !data['email'] || !data['subject'] || !data['message']) {
+                showNotification('Vui lòng điền đầy đủ thông tin bắt buộc', 'error');
+                return;
+            }
+            
+            if (!data['terms']) {
+                showNotification('Vui lòng đồng ý với chính sách bảo mật', 'error');
+                return;
+            }
+            
+            // Simulate form submission
+            showNotification('Tin nhắn đã được gửi thành công! Chúng tôi sẽ phản hồi trong vòng 24 giờ.', 'success');
+            this.reset();
+        });
+
+        // FAQ functionality
+        document.querySelectorAll('.faq-category').forEach(category => {
+            category.addEventListener('click', () => {
+                // Remove active from all categories
+                document.querySelectorAll('.faq-category').forEach(c => c.classList.remove('active'));
+                // Add active to clicked category
+                category.classList.add('active');
+                
+                const categoryType = category.getAttribute('data-category');
+                const faqItems = document.querySelectorAll('.faq-item');
+                
+                // Show/hide FAQ items based on category
+                faqItems.forEach(item => {
+                    if (categoryType === 'general' || item.getAttribute('data-category') === categoryType) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.closest('.faq-item');
+                
+                // Close other FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (item !== faqItem) {
+                        item.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current FAQ item
+                faqItem.classList.toggle('active');
+            });
+        });
+
+        // Live chat function
+        function openLiveChat() {
+            showNotification('Tính năng Live Chat sẽ được phát triển. Hiện tại vui lòng liên hệ qua hotline 1900 1234.', 'info');
+        }
+
+        // Initialize FAQ - show general category by default
+        document.addEventListener('DOMContentLoaded', function() {
+            const generalFaqs = document.querySelectorAll('.faq-item[data-category="general"]');
+            const otherFaqs = document.querySelectorAll('.faq-item:not([data-category="general"])');
+            
+            generalFaqs.forEach(faq => faq.style.display = 'block');
+            otherFaqs.forEach(faq => faq.style.display = 'none');
+        });
+    </script>
+</body>
+</html>

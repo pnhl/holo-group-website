@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOLO Express - Dịch vụ giao hàng nhanh toàn quốc</title>
+    <meta name="description" content="HOLO Express cung cấp dịch vụ giao hàng nhanh toàn quốc với cam kết giao trong 24h, theo dõi thời gian thực và bảo hiểm hàng hóa.">
+    <meta name="keywords" content="HOLO Express, giao hàng nhanh, chuyển phát nhanh, logistics, vận chuyển hàng hóa">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Condensed:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="assets/images/logo.png" alt="HOLO Group" class="logo">
+                    <span class="brand-text">HOLO Group</span>
+                </div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Trang chủ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Về chúng tôi</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">Giới thiệu</a></li>
+                            <li><a href="subsidiaries.html">Công ty thành viên</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active">Dịch vụ</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services.html">Tổng quan dịch vụ</a></li>
+                            <li><a href="holo-bus-lines.html">HOLO Bus Lines</a></li>
+                            <li><a href="holo-express.html">HOLO Express</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link">Tin tức</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="careers.html" class="nav-link">Tuyển dụng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Liên hệ</a>
+                    </li>
+                    <li class="nav-item lang-switch">
+                        <a href="#" class="nav-link" onclick="toggleLanguage()">EN</a>
+                    </li>
+                </ul>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="express-hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="brand-badge">
+                        <img src="assets/images/holo-express-logo.png" alt="HOLO Express">
+                        <span>HOLO Express</span>
+                    </div>
+                    <h1>Giao hàng nhanh <span class="highlight">Tin cậy mọi lúc</span></h1>
+                    <p class="hero-subtitle">Dịch vụ chuyển phát nhanh hàng đầu với cam kết giao hàng trong 24h, theo dõi thời gian thực và bảo hiểm toàn diện.</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">24h</span>
+                            <span class="stat-label">Giao hàng nhanh</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">99.8%</span>
+                            <span class="stat-label">Tỉ lệ thành công</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">63/63</span>
+                            <span class="stat-label">Tỉnh/thành phố</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Hỗ trợ khách hàng</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#shipping-calculator" class="btn btn-primary">Tính cước giao hàng</a>
+                        <a href="#tracking" class="btn btn-outline">Tra cứu đơn hàng</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/images/delivery-truck.jpg" alt="HOLO Express - Xe giao hàng">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="express-services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Dịch vụ chuyển phát</h2>
+                <p class="section-subtitle">Giải pháp vận chuyển toàn diện cho mọi nhu cầu</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card featured">
+                    <div class="service-icon">
+                        <img src="assets/images/express-icon.svg" alt="Express">
+                    </div>
+                    <h3>Express 24h</h3>
+                    <p>Giao hàng trong 24 giờ trong nội thành, 48 giờ liên tỉnh. Phù hợp cho hàng hóa cần giao gấp.</p>
+                    <ul class="service-features">
+                        <li>Giao hàng trong 24h</li>
+                        <li>Theo dõi thời gian thực</li>
+                        <li>Bảo hiểm 100% giá trị</li>
+                        <li>Hỗ trợ thu hộ COD</li>
+                    </ul>
+                    <div class="service-price">
+                        <span>Từ 25.000đ</span>
+                        <a href="#calculator" class="btn btn-primary btn-small">Tính cước</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="assets/images/standard-icon.svg" alt="Standard">
+                    </div>
+                    <h3>Standard</h3>
+                    <p>Dịch vụ giao hàng tiêu chuẩn 2-3 ngày với mức giá tối ưu. Lựa chọn phổ biến cho e-commerce.</p>
+                    <ul class="service-features">
+                        <li>Giao hàng 2-3 ngày</li>
+                        <li>Giá cước hợp lý</li>
+                        <li>Mạng lưới rộng khắp</li>
+                        <li>Hỗ trợ đóng gói</li>
+                    </ul>
+                    <div class="service-price">
+                        <span>Từ 15.000đ</span>
+                        <a href="#calculator" class="btn btn-outline btn-small">Tính cước</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="assets/images/economy-icon.svg" alt="Economy">
+                    </div>
+                    <h3>Economy</h3>
+                    <p>Giao hàng tiết kiệm 4-7 ngày với mức giá thấp nhất. Phù hợp cho hàng hóa không gấp.</p>
+                    <ul class="service-features">
+                        <li>Giao hàng 4-7 ngày</li>
+                        <li>Giá cước siêu tiết kiệm</li>
+                        <li>Vẫn đảm bảo an toàn</li>
+                        <li>Theo dõi đơn hàng</li>
+                    </ul>
+                    <div class="service-price">
+                        <span>Từ 12.000đ</span>
+                        <a href="#calculator" class="btn btn-outline btn-small">Tính cước</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="assets/images/bulk-icon.svg" alt="Bulk">
+                    </div>
+                    <h3>Bulk Logistics</h3>
+                    <p>Vận chuyển số lượng lớn và hàng khối với xe tải chuyên dụng. Dành cho doanh nghiệp.</p>
+                    <ul class="service-features">
+                        <li>Xe tải từ 1-20 tấn</li>
+                        <li>Vận chuyển pallet</li>
+                        <li>Bốc xếp chuyên nghiệp</li>
+                        <li>Hợp đồng dài hạn</li>
+                    </ul>
+                    <div class="service-price">
+                        <span>Liên hệ</span>
+                        <a href="#contact" class="btn btn-outline btn-small">Báo giá</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shipping Calculator -->
+    <section class="shipping-calculator" id="shipping-calculator">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tính cước giao hàng</h2>
+                <p class="section-subtitle">Tính toán chi phí chính xác và nhanh chóng</p>
+            </div>
+            
+            <div class="calculator-container">
+                <form class="calculator-form" id="shippingForm">
+                    <div class="form-section">
+                        <h4>Thông tin gửi hàng</h4>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="sender-province">Tỉnh/thành gửi</label>
+                                <select id="sender-province" name="sender-province" required>
+                                    <option value="">Chọn tỉnh/thành</option>
+                                    <option value="hanoi">Hà Nội</option>
+                                    <option value="hcm">TP. Hồ Chí Minh</option>
+                                    <option value="danang">Đà Nẵng</option>
+                                    <option value="haiphong">Hải Phòng</option>
+                                    <option value="cantho">Cần Thơ</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="sender-district">Quận/huyện gửi</label>
+                                <select id="sender-district" name="sender-district" required>
+                                    <option value="">Chọn quận/huyện</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h4>Thông tin nhận hàng</h4>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="receiver-province">Tỉnh/thành nhận</label>
+                                <select id="receiver-province" name="receiver-province" required>
+                                    <option value="">Chọn tỉnh/thành</option>
+                                    <option value="hanoi">Hà Nội</option>
+                                    <option value="hcm">TP. Hồ Chí Minh</option>
+                                    <option value="danang">Đà Nẵng</option>
+                                    <option value="haiphong">Hải Phòng</option>
+                                    <option value="cantho">Cần Thơ</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="receiver-district">Quận/huyện nhận</label>
+                                <select id="receiver-district" name="receiver-district" required>
+                                    <option value="">Chọn quận/huyện</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h4>Thông tin hàng hóa</h4>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="package-weight">Khối lượng (kg)</label>
+                                <input type="number" id="package-weight" name="package-weight" min="0" step="0.1" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="package-value">Giá trị hàng hóa (VNĐ)</label>
+                                <input type="number" id="package-value" name="package-value" min="0" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="package-length">Chiều dài (cm)</label>
+                                <input type="number" id="package-length" name="package-length" min="1" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="package-width">Chiều rộng (cm)</label>
+                                <input type="number" id="package-width" name="package-width" min="1" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="package-height">Chiều cao (cm)</label>
+                                <input type="number" id="package-height" name="package-height" min="1" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h4>Dịch vụ bổ sung</h4>
+                        <div class="checkbox-group">
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="cod-service" id="cod-service">
+                                <span class="checkmark"></span>
+                                Thu hộ tiền (COD)
+                            </label>
+                            
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="insurance" id="insurance">
+                                <span class="checkmark"></span>
+                                Bảo hiểm hàng hóa
+                            </label>
+                            
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="fragile" id="fragile">
+                                <span class="checkmark"></span>
+                                Hàng dễ vỡ
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-primary" onclick="calculateShipping()">Tính cước phí</button>
+                        <button type="reset" class="btn btn-outline">Làm mới</button>
+                    </div>
+                </form>
+                
+                <div class="calculator-result" id="calculatorResult" style="display: none;">
+                    <h4>Kết quả tính cước</h4>
+                    <div class="result-grid">
+                        <div class="result-item">
+                            <div class="service-type">Express 24h</div>
+                            <div class="service-time">Giao trong 24h</div>
+                            <div class="service-price" id="express-price">45.000đ</div>
+                            <button class="btn btn-primary btn-small">Chọn</button>
+                        </div>
+                        
+                        <div class="result-item">
+                            <div class="service-type">Standard</div>
+                            <div class="service-time">Giao trong 2-3 ngày</div>
+                            <div class="service-price" id="standard-price">25.000đ</div>
+                            <button class="btn btn-outline btn-small">Chọn</button>
+                        </div>
+                        
+                        <div class="result-item">
+                            <div class="service-type">Economy</div>
+                            <div class="service-time">Giao trong 4-7 ngày</div>
+                            <div class="service-price" id="economy-price">18.000đ</div>
+                            <button class="btn btn-outline btn-small">Chọn</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tracking Section -->
+    <section class="tracking-section" id="tracking">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tra cứu đơn hàng</h2>
+                <p class="section-subtitle">Theo dõi hành trình đơn hàng của bạn</p>
+            </div>
+            
+            <div class="tracking-container">
+                <div class="tracking-form">
+                    <div class="form-group">
+                        <label for="tracking-number">Mã đơn hàng</label>
+                        <div class="input-group">
+                            <input type="text" id="tracking-number" placeholder="Nhập mã đơn hàng (VD: HX123456789)" required>
+                            <button type="button" class="btn btn-primary" onclick="trackOrder()">Tra cứu</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tracking-result" id="trackingResult" style="display: none;">
+                    <div class="order-info">
+                        <h4>Thông tin đơn hàng: <span id="orderNumber">HX123456789</span></h4>
+                        <div class="order-details">
+                            <div class="detail-item">
+                                <span class="label">Người gửi:</span>
+                                <span class="value">Nguyễn Văn A</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Người nhận:</span>
+                                <span class="value">Trần Thị B</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Dịch vụ:</span>
+                                <span class="value">Express 24h</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Trạng thái:</span>
+                                <span class="value status delivered">Đã giao hàng</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tracking-timeline">
+                        <div class="timeline-item completed">
+                            <div class="timeline-icon">📦</div>
+                            <div class="timeline-content">
+                                <h5>Đã tiếp nhận</h5>
+                                <p>Đơn hàng đã được tiếp nhận tại bưu cục TP. Hồ Chí Minh</p>
+                                <span class="timestamp">08:30, 15/01/2025</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item completed">
+                            <div class="timeline-icon">🚛</div>
+                            <div class="timeline-content">
+                                <h5>Đang vận chuyển</h5>
+                                <p>Hàng đã khởi hành từ kho TP. Hồ Chí Minh đi Hà Nội</p>
+                                <span class="timestamp">14:20, 15/01/2025</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item completed">
+                            <div class="timeline-icon">🏢</div>
+                            <div class="timeline-content">
+                                <h5>Đã đến kho trung chuyển</h5>
+                                <p>Hàng đã đến bưu cục Hà Nội và chuẩn bị giao</p>
+                                <span class="timestamp">22:15, 15/01/2025</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item completed">
+                            <div class="timeline-icon">🚚</div>
+                            <div class="timeline-content">
+                                <h5>Đang giao hàng</h5>
+                                <p>Shipper đang trên đường giao hàng</p>
+                                <span class="timestamp">09:30, 16/01/2025</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item completed">
+                            <div class="timeline-icon">✅</div>
+                            <div class="timeline-content">
+                                <h5>Đã giao thành công</h5>
+                                <p>Giao hàng thành công cho người nhận</p>
+                                <span class="timestamp">11:45, 16/01/2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Map -->
+    <section class="coverage-map">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Phủ sóng toàn quốc</h2>
+                <p class="section-subtitle">Mạng lưới vận chuyển rộng khắp 63 tỉnh thành</p>
+            </div>
+            
+            <div class="map-container">
+                <div class="map-image">
+                    <img src="assets/images/vietnam-map.jpg" alt="Bản đồ phủ sóng HOLO Express">
+                </div>
+                
+                <div class="coverage-stats">
+                    <div class="stat-item">
+                        <div class="stat-icon">🏢</div>
+                        <div class="stat-info">
+                            <span class="stat-number">150+</span>
+                            <span class="stat-label">Bưu cục</span>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-icon">🚛</div>
+                        <div class="stat-info">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Xe vận chuyển</span>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-icon">👥</div>
+                        <div class="stat-info">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-label">Nhân viên</span>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-icon">📦</div>
+                        <div class="stat-info">
+                            <span class="stat-number">10K+</span>
+                            <span class="stat-label">Đơn hàng/ngày</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enterprise Solutions -->
+    <section class="enterprise-solutions">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Giải pháp doanh nghiệp</h2>
+                <p class="section-subtitle">Tối ưu hóa chi phí logistics cho doanh nghiệp</p>
+            </div>
+            
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <img src="assets/images/ecommerce-icon.svg" alt="E-commerce">
+                    </div>
+                    <h4>E-commerce Integration</h4>
+                    <p>Tích hợp API với các nền tảng bán hàng online. Tự động hóa quy trình từ đặt hàng đến giao hàng.</p>
+                    <ul class="solution-features">
+                        <li>API tích hợp dễ dàng</li>
+                        <li>Quản lý đơn hàng tự động</li>
+                        <li>Báo cáo chi tiết</li>
+                        <li>Hỗ trợ COD</li>
+                    </ul>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <img src="assets/images/warehouse-icon.svg" alt="Warehouse">
+                    </div>
+                    <h4>Fulfillment Center</h4>
+                    <p>Dịch vụ kho bãi và thực hiện đơn hàng. Tối ưu hóa chi phí lưu kho và giao hàng cho doanh nghiệp.</p>
+                    <ul class="solution-features">
+                        <li>Kho hàng hiện đại</li>
+                        <li>Quản lý tồn kho</li>
+                        <li>Đóng gói chuyên nghiệp</li>
+                        <li>Giao hàng nhanh chóng</li>
+                    </ul>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <img src="assets/images/b2b-icon.svg" alt="B2B">
+                    </div>
+                    <h4>B2B Logistics</h4>
+                    <p>Giải pháp vận chuyển B2B với dịch vụ tùy chỉnh. Phù hợp cho các doanh nghiệp có nhu cầu đặc biệt.</p>
+                    <ul class="solution-features">
+                        <li>Hợp đồng dài hạn</li>
+                        <li>Giá cả ưu đãi</li>
+                        <li>Dịch vụ tùy chỉnh</li>
+                        <li>Hỗ trợ 24/7</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Bắt đầu sử dụng HOLO Express ngay hôm nay</h2>
+                <p>Trải nghiệm dịch vụ giao hàng nhanh, an toàn và tin cậy</p>
+                <div class="cta-buttons">
+                    <a href="#shipping-calculator" class="btn btn-primary">Tính cước ngay</a>
+                    <a href="tel:19001999" class="btn btn-secondary">Hotline: 1900 1999</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo-white.png" alt="HOLO Group">
+                        <span>HOLO Group</span>
+                    </div>
+                    <p class="footer-desc">Kết nối hành trình - Tăng tốc tương lai. Tập đoàn hàng đầu Việt Nam về dịch vụ vận tải và logistics.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <img src="assets/images/facebook-icon.svg" alt="Facebook">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="assets/images/linkedin-icon.svg" alt="LinkedIn">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="assets/images/youtube-icon.svg" alt="YouTube">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Công ty thành viên</h4>
+                    <ul class="footer-links">
+                        <li><a href="holo-bus-lines.html">HOLO Bus Lines</a></li>
+                        <li><a href="holo-express.html">HOLO Express</a></li>
+                        <li><a href="subsidiaries.html">Tất cả công ty</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Dịch vụ</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Vận tải hành khách</a></li>
+                        <li><a href="services.html">Giao hàng Express</a></li>
+                        <li><a href="services.html">Logistics</a></li>
+                        <li><a href="services.html">Đặt vé online</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Thông tin</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Về chúng tôi</a></li>
+                        <li><a href="news.html">Tin tức</a></li>
+                        <li><a href="careers.html">Tuyển dụng</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="footer-legal">
+                        <span>&copy; 2025 HOLO Group. All rights reserved.</span>
+                        <div class="legal-links">
+                            <a href="legal/privacy.html">Chính sách bảo mật</a>
+                            <a href="legal/terms.html">Điều khoản sử dụng</a>
+                            <a href="legal/cookie.html">Chính sách Cookie</a>
+                        </div>
+                    </div>
+                    <div class="footer-contact">
+                        <span>Hotline: 1900 1999 | Email: express@holo-group.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom CSS for Express page -->
+    <style>
+        .express-hero {
+            background: linear-gradient(135deg, #14B8A6 0%, #0F766E 100%);
+            padding: 140px 0 100px;
+            margin-top: 70px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .express-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('../images/logistics-pattern.svg') repeat;
+            opacity: 0.1;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-text {
+            color: var(--white);
+        }
+
+        .brand-badge {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 24px;
+            padding: 12px 20px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            width: fit-content;
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-number {
+            display: block;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .express-services {
+            padding: 120px 0;
+            background: var(--light-bg);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .service-card.featured {
+            border: 3px solid var(--secondary-color);
+            transform: translateY(-10px);
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .service-card.featured:hover {
+            transform: translateY(-15px);
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--gradient-secondary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+
+        .service-icon img {
+            width: 35px;
+            height: 35px;
+            filter: brightness(0) invert(1);
+        }
+
+        .service-card h3 {
+            margin-bottom: 16px;
+            color: var(--primary-color);
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+
+        .service-features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+
+        .service-features li {
+            padding: 8px 0;
+            padding-left: 24px;
+            position: relative;
+            color: var(--text-color);
+        }
+
+        .service-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        .service-price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: var(--light-bg);
+            border-radius: 12px;
+            margin: -20px;
+            margin-top: 20px;
+        }
+
+        .service-price span {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--accent-color);
+        }
+
+        .shipping-calculator {
+            padding: 120px 0;
+            background: var(--white);
+        }
+
+        .calculator-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .calculator-form {
+            background: var(--light-bg);
+            padding: 50px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+        }
+
+        .form-section {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .form-section:last-of-type {
+            border-bottom: none;
+        }
+
+        .form-section h4 {
+            margin-bottom: 24px;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+            padding: 12px;
+            border-radius: 8px;
+            transition: var(--transition);
+        }
+
+        .checkbox-item:hover {
+            background: rgba(20, 184, 166, 0.1);
+        }
+
+        .checkbox-item input[type="checkbox"] {
+            display: none;
+        }
+
+        .checkmark {
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--border-color);
+            border-radius: 4px;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .checkbox-item input[type="checkbox"]:checked + .checkmark {
+            background: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+
+        .checkbox-item input[type="checkbox"]:checked + .checkmark::after {
+            content: '✓';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--white);
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .calculator-result {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .calculator-result h4 {
+            margin-bottom: 30px;
+            color: var(--primary-color);
+            text-align: center;
+        }
+
+        .result-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .result-item {
+            background: var(--light-bg);
+            padding: 24px;
+            border-radius: 12px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: var(--transition);
+        }
+
+        .result-item:hover {
+            border-color: var(--secondary-color);
+            transform: translateY(-4px);
+        }
+
+        .service-type {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+        }
+
+        .service-time {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 16px;
+        }
+
+        .service-price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 16px;
+        }
+
+        .tracking-section {
+            padding: 120px 0;
+            background: var(--light-bg);
+        }
+
+        .tracking-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .tracking-form {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: var(--shadow);
+        }
+
+        .input-group {
+            display: flex;
+            gap: 16px;
+        }
+
+        .input-group input {
+            flex: 1;
+        }
+
+        .tracking-result {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .order-info {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .order-info h4 {
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .order-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+        }
+
+        .detail-item {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .detail-item .label {
+            font-weight: 500;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .detail-item .value {
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        .status {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .status.delivered {
+            background: #D1FAE5;
+            color: #065F46;
+        }
+
+        .tracking-timeline {
+            position: relative;
+        }
+
+        .tracking-timeline::before {
+            content: '';
+            position: absolute;
+            left: 25px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--border-color);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 70px;
+            margin-bottom: 30px;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-icon {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 50px;
+            height: 50px;
+            background: var(--white);
+            border: 3px solid var(--border-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            z-index: 2;
+        }
+
+        .timeline-item.completed .timeline-icon {
+            border-color: var(--secondary-color);
+            background: var(--secondary-color);
+        }
+
+        .timeline-item.completed::before {
+            content: '';
+            position: absolute;
+            left: 25px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: var(--secondary-color);
+            z-index: 1;
+        }
+
+        .timeline-content h5 {
+            margin-bottom: 8px;
+            color: var(--primary-color);
+        }
+
+        .timeline-content p {
+            color: var(--text-color);
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        .timestamp {
+            color: var(--text-light);
+            font-size: 0.875rem;
+        }
+
+        .coverage-map {
+            padding: 120px 0;
+            background: var(--white);
+        }
+
+        .map-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .map-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+        }
+
+        .coverage-stats {
+            display: grid;
+            gap: 30px;
+        }
+
+        .coverage-stats .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 30px;
+            background: var(--light-bg);
+            border-radius: 16px;
+            transition: var(--transition);
+        }
+
+        .coverage-stats .stat-item:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow);
+        }
+
+        .coverage-stats .stat-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-secondary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .coverage-stats .stat-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .coverage-stats .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 4px;
+        }
+
+        .coverage-stats .stat-label {
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        .enterprise-solutions {
+            padding: 120px 0;
+            background: var(--light-bg);
+        }
+
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .solution-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .solution-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .solution-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+
+        .solution-icon img {
+            width: 40px;
+            height: 40px;
+            filter: brightness(0) invert(1);
+        }
+
+        .solution-card h4 {
+            margin-bottom: 16px;
+            color: var(--primary-color);
+        }
+
+        .solution-card p {
+            color: var(--text-light);
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+
+        .solution-features {
+            list-style: none;
+            padding: 0;
+        }
+
+        .solution-features li {
+            padding: 8px 0;
+            padding-left: 24px;
+            position: relative;
+            color: var(--text-color);
+        }
+
+        .solution-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-content,
+            .map-container {
+                grid-template-columns: 1fr;
+                gap: 50px;
+                text-align: center;
+            }
+
+            .hero-stats {
+                grid-template-columns: repeat(2, 1fr);
+                max-width: 400px;
+                margin: 30px auto 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .services-grid,
+            .solutions-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .input-group {
+                flex-direction: column;
+            }
+
+            .result-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .coverage-stats .stat-item {
+                flex-direction: column;
+                text-align: center;
+                gap: 16px;
+            }
+
+            .calculator-form {
+                padding: 30px;
+            }
+
+            .tracking-form,
+            .tracking-result {
+                padding: 30px;
+            }
+
+            .timeline-item {
+                padding-left: 60px;
+            }
+
+            .timeline-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+
+            .tracking-timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item.completed::before {
+                left: 20px;
+            }
+        }
+    </style>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Calculate shipping function
+        function calculateShipping() {
+            const senderProvince = document.getElementById('sender-province').value;
+            const receiverProvince = document.getElementById('receiver-province').value;
+            const weight = parseFloat(document.getElementById('package-weight').value);
+            const value = parseFloat(document.getElementById('package-value').value);
+            
+            if (!senderProvince || !receiverProvince || !weight || !value) {
+                showNotification('Vui lòng điền đầy đủ thông tin', 'error');
+                return;
+            }
+            
+            // Simple calculation logic
+            const basePrice = 15000;
+            const distanceMultiplier = senderProvince === receiverProvince ? 1 : 1.5;
+            const weightMultiplier = Math.ceil(weight);
+            
+            const expressPrice = Math.round((basePrice * distanceMultiplier * weightMultiplier * 1.8) / 1000) * 1000;
+            const standardPrice = Math.round((basePrice * distanceMultiplier * weightMultiplier * 1.2) / 1000) * 1000;
+            const economyPrice = Math.round((basePrice * distanceMultiplier * weightMultiplier) / 1000) * 1000;
+            
+            document.getElementById('express-price').textContent = expressPrice.toLocaleString('vi-VN') + 'đ';
+            document.getElementById('standard-price').textContent = standardPrice.toLocaleString('vi-VN') + 'đ';
+            document.getElementById('economy-price').textContent = economyPrice.toLocaleString('vi-VN') + 'đ';
+            
+            document.getElementById('calculatorResult').style.display = 'block';
+            document.getElementById('calculatorResult').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Track order function
+        function trackOrder() {
+            const trackingNumber = document.getElementById('tracking-number').value.trim();
+            
+            if (!trackingNumber) {
+                showNotification('Vui lòng nhập mã đơn hàng', 'error');
+                return;
+            }
+            
+            if (!trackingNumber.match(/^HX[0-9]{9}$/)) {
+                showNotification('Mã đơn hàng không đúng định dạng (VD: HX123456789)', 'error');
+                return;
+            }
+            
+            document.getElementById('orderNumber').textContent = trackingNumber;
+            document.getElementById('trackingResult').style.display = 'block';
+            document.getElementById('trackingResult').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Auto-populate district options (simplified)
+        document.getElementById('sender-province').addEventListener('change', function() {
+            const districts = ['Quận 1', 'Quận 2', 'Quận 3', 'Quận 4', 'Quận 5'];
+            const select = document.getElementById('sender-district');
+            select.innerHTML = '<option value="">Chọn quận/huyện</option>';
+            districts.forEach(district => {
+                select.innerHTML += `<option value="${district}">${district}</option>`;
+            });
+        });
+
+        document.getElementById('receiver-province').addEventListener('change', function() {
+            const districts = ['Quận 1', 'Quận 2', 'Quận 3', 'Quận 4', 'Quận 5'];
+            const select = document.getElementById('receiver-district');
+            select.innerHTML = '<option value="">Chọn quận/huyện</option>';
+            districts.forEach(district => {
+                select.innerHTML += `<option value="${district}">${district}</option>`;
+            });
+        });
+    </script>
+</body>
+</html>
